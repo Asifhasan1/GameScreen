@@ -11,6 +11,12 @@
 		E072D71E2B69A12500BA2EE7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E072D71D2B69A12500BA2EE7 /* ContentView.swift */; };
 		E072D7202B69A12600BA2EE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E072D71F2B69A12600BA2EE7 /* Assets.xcassets */; };
 		E072D7232B69A12600BA2EE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E072D7222B69A12600BA2EE7 /* Preview Assets.xcassets */; };
+		E405CE212B6AA1680085A021 /* Drag&Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405CE202B6AA1680085A021 /* Drag&Drop.swift */; };
+		E405CE232B6ACAA20085A021 /* GsmeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405CE222B6ACAA20085A021 /* GsmeInfo.swift */; };
+		E405CE252B6C211A0085A021 /* Drop2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405CE242B6C211A0085A021 /* Drop2.swift */; };
+		E405CE272B6C3F370085A021 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405CE262B6C3F370085A021 /* SwiftUIView.swift */; };
+		E405CE302B6D89710085A021 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E405CE2F2B6D89710085A021 /* ConfettiSwiftUI */; };
+		E4D2F28D2B71824D00C314B2 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D2F28C2B71824D00C314B2 /* DraggableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		E072D71D2B69A12500BA2EE7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E072D71F2B69A12600BA2EE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E072D7222B69A12600BA2EE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E405CE202B6AA1680085A021 /* Drag&Drop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drag&Drop.swift"; sourceTree = "<group>"; };
+		E405CE222B6ACAA20085A021 /* GsmeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GsmeInfo.swift; sourceTree = "<group>"; };
+		E405CE242B6C211A0085A021 /* Drop2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drop2.swift; sourceTree = "<group>"; };
+		E405CE262B6C3F370085A021 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		E4D2F28C2B71824D00C314B2 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E405CE302B6D89710085A021 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +65,12 @@
 			children = (
 				E072D71B2B69A12500BA2EE7 /* GamescreenApp.swift */,
 				E072D71D2B69A12500BA2EE7 /* ContentView.swift */,
+				E405CE222B6ACAA20085A021 /* GsmeInfo.swift */,
+				E405CE242B6C211A0085A021 /* Drop2.swift */,
+				E405CE262B6C3F370085A021 /* SwiftUIView.swift */,
+				E405CE202B6AA1680085A021 /* Drag&Drop.swift */,
 				E072D71F2B69A12600BA2EE7 /* Assets.xcassets */,
+				E4D2F28C2B71824D00C314B2 /* DraggableView.swift */,
 				E072D7212B69A12600BA2EE7 /* Preview Content */,
 			);
 			path = Gamescreen;
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = Gamescreen;
+			packageProductDependencies = (
+				E405CE2F2B6D89710085A021 /* ConfettiSwiftUI */,
+			);
 			productName = Gamescreen;
 			productReference = E072D7182B69A12500BA2EE7 /* Gamescreen.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = E072D70F2B69A12500BA2EE7;
+			packageReferences = (
+				E405CE2E2B6D89710085A021 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = E072D7192B69A12500BA2EE7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D2F28D2B71824D00C314B2 /* DraggableView.swift in Sources */,
 				E072D71E2B69A12500BA2EE7 /* ContentView.swift in Sources */,
+				E405CE252B6C211A0085A021 /* Drop2.swift in Sources */,
+				E405CE272B6C3F370085A021 /* SwiftUIView.swift in Sources */,
+				E405CE232B6ACAA20085A021 /* GsmeInfo.swift in Sources */,
 				E072D71C2B69A12500BA2EE7 /* GamescreenApp.swift in Sources */,
+				E405CE212B6AA1680085A021 /* Drag&Drop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +300,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gamescreen/Preview Content\"";
+				DEVELOPMENT_TEAM = 337877YBW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gamescreen/Preview Content\"";
+				DEVELOPMENT_TEAM = 337877YBW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E405CE2E2B6D89710085A021 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E405CE2F2B6D89710085A021 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E405CE2E2B6D89710085A021 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E072D7102B69A12500BA2EE7 /* Project object */;
 }
