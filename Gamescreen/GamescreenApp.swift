@@ -11,7 +11,8 @@ import SwiftUI
 struct GamescreenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            DragAndDropButton(dropping: .allCases.randomElement() ?? .imageOne)
         }
     }
 }
